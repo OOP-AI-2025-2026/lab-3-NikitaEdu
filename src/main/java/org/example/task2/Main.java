@@ -3,6 +3,11 @@ package org.example.task2;
 public class Main {
     public static void main(String[] args) {
 
+        Box box = new Box(2, 9, 6);
+        System.out.println("Об'єм:" + box.getVolume());
+        System.out.println("Площа бічної поверхні:" + box.getLateralSurfaceArea());
+        System.out.println("Площа поверхні:" + box.getSurfaceArea());
+
         Cart cart = new Cart(new Item[10]);
         cart.add(new Item(1, "Samsung Galaxy S23", 27999));
         cart.add(new Item(2, "Lenovo IdeaPad 3", 19499));
